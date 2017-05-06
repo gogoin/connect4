@@ -19,7 +19,7 @@ from setting import *
 """
 
 def countConnect(one, two, three, four, man):
-    o_man = getOpponent(man)
+w    o_man = getOpponent(man)
     #print("o_man : ", o_man )
     if(one != o_man and two != o_man and three != o_man and four != o_man):
         count = 0
@@ -42,8 +42,8 @@ def getCount(board, player) :
     o_player = getOpponent(player)
     O_count = 0
     X_count = 0
-    for column in range(board.width):
-        for row in range(board.height):
+    for row in range(board.height):
+        for column in range(board.width):
             # Horizonatal - evaluation
             if (column + 3 <= board.width) :
                 try:
