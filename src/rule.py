@@ -19,7 +19,7 @@ from setting import *
 """
 
 def countConnect(one, two, three, four, man):
-w    o_man = getOpponent(man)
+    o_man = getOpponent(man)
     #print("o_man : ", o_man )
     if(one != o_man and two != o_man and three != o_man and four != o_man):
         count = 0
