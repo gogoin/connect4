@@ -8,7 +8,7 @@ class Board(object):
 
         if len(board) == 0:
 
-            self.board = [[' ' for row in range(7)] for column in range(6)]
+            self.board = [[' ' for column in range(7)] for row in range(6)]
             
         else:
 
@@ -74,8 +74,8 @@ class Board(object):
         
     def winCheck(self, man):
         state = 0
-        for column in range(self.width):
-            for row in range(self.height):
+        for row in range(self.height):
+            for column in range(self.width):
                 try:
                     if(self.board[row][column] == man and self.board[row][column+1] == man and self.board[row][column+2] == man and self.board[row][column+3] == man):
                         state = WIN
